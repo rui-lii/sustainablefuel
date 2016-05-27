@@ -17,8 +17,8 @@ body {
   min-height:100vh;
   min-width:100%;
   z-index:-5;
-  -webkit-filter:opacity(60%);
-  filter:opacity(60%);
+  -webkit-filter:opacity(40%);
+  filter:opacity(40%);
 }
 
 .filter {
@@ -69,7 +69,7 @@ body {
 }
 
 .content-landing > h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .content-landing > p {
@@ -124,15 +124,15 @@ body {
 }
 
 .background-1 {
-  background-color:#68945b;
+  background-color:#bcc85a;
 }
 
 .background-2 {
-  background-color:#4fa7b6;
+  background-color:#68945b;
 }
 
 .background-3 {
-  background-color:#bcc85a;
+  background-color:#4fa7b6;
 }
 
 /*PARALLAX*/
@@ -193,6 +193,10 @@ body {
 .dark-content {
   color:#fff;
   max-width:30rem;
+}
+
+.dark-content > img {
+  max-width: 30rem;
 }
 
 .team-showcase {
@@ -431,15 +435,26 @@ body {
   .light-content-wrap, .half-wrap, .dark-content-wrap{
     padding: 25px 0 25px 0;
   }
+  .dark-content-wrap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index:5;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+  }
   .light-content-wrap-center {
     padding: 25px 10px 25px 10px;
   }
   .dark-content {
     max-width:20rem;
     text-align: center;
-  }
-  .dark-content {
     font-size:0.8rem;
+    margin-bottom: 50px;
+  }
+  .dark-content > img {
+    max-width:20rem;
   }
   .circles {
     width:4rem;
@@ -483,7 +498,8 @@ body {
 /*NAVBAR BRAND STYLING*/
 .navbar-inverse .navbar-brand {
   color: #555;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 .navbar-inverse .navbar-brand:hover {
   cursor:pointer;
